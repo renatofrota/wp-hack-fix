@@ -1,5 +1,5 @@
 # wp-hack-fix
-Script to resolve malware infections on WordPress websites by reisntalling all files on core, plugins and themes from their official repositories. Be aware: it removes anything it considers "non-core". Take a backup!
+Script to resolve malware infections on WordPress websites by reinstalling all files on core, plugins and themes from their official repositories. Be aware: it removes anything it considers "non-core". Take a backup!
 
 ## Dependencies
 
