@@ -6,7 +6,7 @@
 # forcedly reinstall core
 wp core download --force --version=$(wp core version)
 # forcedly remove files that should not exist
-for i in $(wp core verify-checksums 2>&1 | grep 'should not exist:' | cut -d : -f 3-); do rm -v $i; done
+for i in $(wp core verify-checksums 2>&1 | grep 'should not exist:' | cut -d : -f 3-); do rm -fv $i; done
 # prevents add_filter and add_action in wp-config.php affecting wp-cli executions
 sed -i 's|^add_filter|if function_exists("add_filter") add_filter|g' wp-config.php
 sed -i 's|^add_action|if function_exists("add_action") add_action|g' wp-config.php
